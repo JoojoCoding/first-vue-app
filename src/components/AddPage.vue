@@ -59,6 +59,11 @@ export default {
                 RecipeStorage.push(obj)
 
                 localStorage.setItem("przepisy", JSON.stringify(RecipeStorage))
+                window.alert("Dodano przepis do listy!")
+                this.$router.push("/")
+            }
+            else {
+                window.alert("Uzupełnij dane zanim dodasz przepis!")
             }
         },
     },
